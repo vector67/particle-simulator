@@ -1,0 +1,256 @@
+body {
+    padding:0;
+    margin:0;
+	background-color: #1E1924;
+	font-family:"Lato", arial;
+	color: white;
+}
+@keyframes dropHeader{
+	0%{
+		transform: translateY(-400%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+header li {
+	animation-name: dropHeader;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 0.6s;
+}
+
+header li:nth-child(1) {
+	animation-duration: 0.3s;
+}
+header li:nth-child(2) {
+	animation-duration: 0.4s;
+}
+header li:nth-child(3) {
+	animation-duration: 0.5s;
+}
+header li:nth-child(4) {
+	animation-duration: 0.6s;
+}
+header li:nth-child(5) {
+	animation-duration: 0.7s;
+}
+header li:nth-child(6) {
+	animation-duration: 0.8s;
+}
+header li:nth-child(7) {
+	animation-duration: 0.9s;
+}
+
+section {
+	position: relative;
+}
+
+section a {
+	color: #4A6BFF;
+}
+section a:visited {
+	color: #8686cc;
+}
+nav {
+	padding-top:50px;
+}
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+
+	
+	margin:0;
+}
+
+nav > ul > li > a {
+    color: white;
+    line-height: 1em;
+    padding: 0.1em 1em;
+    text-decoration: none;
+    margin:0.5em 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    transition: background-color 0.3s;
+	transition: top 0.2s;
+	border-right: 2px solid white;
+	position: relative;
+	top: 0;
+}
+
+nav > ul > li:last-child > a {
+	border-right: none;
+}
+
+nav > ul > li > a:hover {
+    background-color:#4F7F83;
+    transition: background-color 0.3s;
+}
+.home a.home, .ass1 a.ass1, .ass2 a.ass2, .ass3 a.ass3, .ass4 a.ass4, .ass5 a.ass5, .ass6 a.ass6,
+.home a.home:hover, .ass1 a.ass1:hover, .ass2 a.ass2:hover, .ass3 a.ass3:hover, .ass4 a.ass4:hover, .ass5 a.ass5:hover, .ass6 a.ass6:hover{
+  pointer-events: none; /* Disables the button completely. Better than just cursor: default; */
+	cursor: default; 
+    background-color: #4F7F83!important;
+}
+.home {
+	border-right:none;
+}
+
+section h2 {
+	font-size: 35px;
+}
+section p, section h3, section h2{
+	text-align: center;
+}
+section, #backgroundCanvasDiv {
+	width:90%;
+	margin:auto;
+}
+
+@media (min-width:768px) {
+	section, #backgroundCanvasDiv {
+		width:750px;
+	}
+}
+@media (min-width:992px) {
+	section, #backgroundCanvasDiv {
+		width:970px;
+	}
+}
+@media (min-width:1200px) {
+	section, #backgroundCanvasDiv {
+		width:1170px;
+	}
+}
+@media (min-width:1600px) {
+	section, #backgroundCanvasDiv{
+		width:1550px;
+	}
+}
+.col {
+	min-height: 239px;
+	display:inline-block;
+	vertical-align: top;
+}
+.col1 {
+	width: 239px;
+}
+.col2 {
+	width: calc(100% - 260px);
+	margin-left:10px;
+}
+section p.bio {
+	margin-top: 0;
+	text-align: left;
+}
+
+section h4 {
+	text-align: left;
+	letter-spacing:1px;
+}
+.fancyList {
+	list-style: none;
+	margin:0;
+	padding:0;
+	text-align: left;
+}
+.fancyList li{
+	display: inline-block;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	padding: 0;
+	margin: 0;
+}
+.fancyList li a {
+	
+    color: white;
+    line-height: 1em; 
+	padding: 10px 10px;
+	display: block;
+	width: 100px;
+	/*margin: 0 10px;*/
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+    transition: background-color 0.3s;
+	transition: top 0.2s;
+	position: relative;
+	top: 0; 
+}
+
+.fancyList li a:hover {
+    background-color:#4F7F83;
+    transition: background-color 0.3s;
+}
+
+#backgroundCanvasDiv {
+	height: 500px;
+}
+
+.buttonContainer {
+	list-style-type: none;
+	text-align: center;
+}
+
+.buttonContainer li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.btn {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	border: 2px solid white;
+	padding: 10px 20px;
+}
+#customInput {
+	margin-right:20px;
+}
+
+.btn:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
+.btn:visited {
+	color: white;
+}
+
+.circularMenu {
+	position: relative;
+}
+
+.circularMenu li {
+	position:absolute;
+	top:0;
+	transform-origin: 21px 80px;
+	display:inline-block;
+	width:100px;
+}
+.circularMenu li:nth-child(1){
+	transform: rotate(0deg);
+}
+.circularMenu li:nth-child(2){
+	transform: rotate(72deg);
+}
+.circularMenu li:nth-child(3){
+	transform: rotate(144deg);
+}
+.circularMenu li:nth-child(4){
+	transform: rotate(216deg);
+}
+.circularMenu li:nth-child(5){
+	transform: rotate(288deg);
+}
+.circularMenu ul {
+	list-style: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Launch | COS 216 prac website</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/symbolic/nerdamer.core.js"></script> <!-- assuming you've saved the file in the root of course -->
+        
+        <script src="js/symbolic/Algebra.js"></script>
+        <script src="js/symbolic/Calculus.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+		<link rel="stylesheet" href="styles.css" /> 
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+	</head>
+	<body class="home" >
+		<header>
+			<nav id="header">
+				<ul>
+					<li style = "padding-right:100px;"><a href="index.html" class="home">Home </a></li>
+					<li><a href="Assignment1/home.html" class="ass1">Assignment 1</a></li> 
+					<li><a href="Assignment2/index.html" class="ass2">Assignment 2</a></li>
+					<li><a href="Assignment3/index.php" class="ass3">Assignment 3</a></li>
+					<li><a href="Assignment4/index.html" class="ass4">Assignment 4</a></li>
+					<li><a href="underConstruction.html#ass5" class="ass5">Assignment 5</a></li>
+					<li><a href="underConstruction.html#ass6" class="ass6">Assignment 6</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<h2 id="launch">Launch page!</h2>
+			<p>This is the launch page. From here you'll be able to go to any of my assignments for this module very easily using the bar at the top.</p>
+			<ul class="buttonContainer">
+                <li><a href="#" id="infinityButton" class="btn btn-default">Infinity Symbol</a></li>
+                <li><a href="#" id="randomSpreadButton" class="btn btn-default">Randomly spread</a></li>
+                <li><a href="#" id="spiralButton" class="btn btn-default">Spiral Symbol</a></li>
+                <li><a href="#" id="heartButton" class="btn btn-default">Heart Symbol</a></li>
+                <li>x=<input class="" id="customInputX" value="" placeholder="Enter a symbolic equation">y=<input class="" id="customInputY" value="" placeholder="Enter a symbolic equation"><a href="#" id="customButton" class="btn btn-default">Custom equation</a></li>
+                <li><input class="" id="throbbingInput" value="" placeholder="Throbbing Factor"></a></li>
+                <li><input class="" id="throbbingTime" value="" placeholder="Throbbing Timing Factor"></a></li>
+            </ul>
+            <div id="backgroundCanvasDiv">
+				<canvas id="backgroundCanvas" ></canvas> 
+			</div>
+			<!--<div class="circularMenu">
+				<ul>
+					<li><a href="#1" data-num="1">num1</a></li>
+					<li><a href="#2" data-num="2">num2</a></li>
+					<li><a href="#3" data-num="3">num3</a></li>
+					<li><a href="#4" data-num="4">num4</a></li>
+					<li><a href="#5" data-num="5">num5</a></li>
+				</ul>
+			</div>-->
+		</section>
+	</body>
+</html>
